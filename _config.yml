@@ -1,0 +1,17 @@
+title: "موسسه ماهان اسپیناس"
+description: "وبسایت معرفی موسسه آموزشی ماهان اسپیناس کرج"
+baseurl: ""
+url: ""
+lang: fa
+markdown: kramdown
+permalink: pretty
+collections:
+  courses:
+    output: false
+  resources:
+    output: false
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
