@@ -67,6 +67,34 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+a,
+span {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Vazirmatn";
   src: url("../fonts/Vazirmatn-Thin.woff2") format("woff2");
@@ -375,8 +403,11 @@ video {
 .hero-media {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(255, 56, 92, 0.06), var(--color-canvas) 70%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 56, 92, 0.06),
+    var(--color-canvas) 70%
+  );
   opacity: 0.22;
   z-index: 0;
 }
