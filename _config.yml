@@ -1,7 +1,7 @@
 title: "موسسه ماهان اسپیناس"
 description: "وبسایت معرفی موسسه آموزشی ماهان اسپیناس کرج"
-baseurl: ""
-url: ""
+baseurl: "/mahan-espinas"
+url: "https://mhkarami97.github.io/mahan-espinas"
 lang: fa
 markdown: kramdown
 permalink: pretty
