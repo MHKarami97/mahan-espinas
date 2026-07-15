@@ -5,10 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="keywords" content="{{ page.keywords | default: 'تورلیدری, آموزش گردشگری, موسسه ماهان اسپیناس, دوره تورلیدری, راهنمای گردشگری, کرج' }}">
+  <meta name="author" content="{{ site.data.site.name }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:image" content="{{ '/assets/img/logo.png' | absolute_url }}">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/img/logo.png' | absolute_url }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  <meta name="theme-color" content="#0d9488">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="IR-07">
+  <meta name="geo.placename" content="کرج">
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "{{ site.data.site.name }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ '/assets/img/logo.png' | absolute_url }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ site.data.site.city }}",
+      "addressCountry": "IR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.data.site.phone }}",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "{{ site.data.site.instagram }}"
+    ]
+  }
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#content">پرش به محتوا</a>
@@ -75,7 +126,7 @@
       </ul>
     </div>
   </div>
-  <div class="container legal-band">© 2026 {{ site.data.site.name }} — این نسخه به‌صورت استاتیک و آماده استقرار روی GitHub Pages طراحی شده است.</div>
+  <div class="container legal-band">© 2026 {{ site.data.site.name }} — طراحی شده توسط mhkarami97.ir</div>
 </footer>
 <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>

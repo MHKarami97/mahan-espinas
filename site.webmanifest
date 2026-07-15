@@ -1,0 +1,26 @@
+{
+  "name": "{{ site.title }}",
+  "short_name": "ماهان اسپیناس",
+  "icons": [
+    {
+      "src": "./assets/img/logo.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/logo.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/logo.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0d9488",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "fa"
+}
