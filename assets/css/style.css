@@ -1,12 +1,12 @@
 /* Art direction: Airbnb-design-analysis — warm consumer marketplace on pure white canvas, single Rausch accent.
-   Palette: canvas #ffffff, ink #222222, muted #6a6a6a, hairline #dddddd, primary Rausch #ff385c.
+   Palette: canvas #ffffff, ink #222222, muted #6a6a6a, hairline #dddddd, primary Rausch #0d7a7a.
    Typography: single family Vazirmatn (per user request) standing in for Airbnb Cereal VF across all weights.
    Density: 8px base spacing, 64px section rhythm, soft rounded shapes (8/14/20/32/full), one shadow tier only. */
 :root,[data-theme="light"]{
   --color-canvas:#ffffff;--color-surface-soft:#f7f7f7;--color-surface-strong:#f2f2f2;
   --color-ink:#222222;--color-body:#3f3f3f;--color-muted:#6a6a6a;--color-muted-soft:#929292;
   --color-hairline:#dddddd;--color-hairline-soft:#ebebeb;--color-border-strong:#c1c1c1;
-  --color-rausch:#ff385c;--color-rausch-active:#e00b41;--color-rausch-disabled:#ffd1da;
+  --color-rausch:#0d7a7a;--color-rausch-active:#0a5f5f;--color-rausch-disabled:#b9e3e0;
   --color-error:#c13515;--color-legal-link:#428bff;
   --color-bg:var(--color-canvas);--color-text:var(--color-ink);--color-text-muted:var(--color-muted);--color-border:var(--color-hairline);--color-primary:var(--color-rausch);--color-text-inverse:#ffffff;
   --font-body:'Vazirmatn',sans-serif;--font-display:'Vazirmatn',sans-serif;
@@ -133,3 +133,5 @@ input:focus,textarea:focus{outline:none;border:2px solid var(--color-ink)}
   .section{padding:var(--space-10) 0}
 }
 @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto;transition:none!important}}
+
+.faq-list{display:grid;gap:var(--space-3)}
