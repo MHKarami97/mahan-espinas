@@ -6,14 +6,13 @@ description: "معرفی موسسه ماهان اسپیناس، دوره‌ها�
 
 <section class="hero">
   <div class="hero-media"></div>
-  <div class="hero-overlay"></div>
   <div class="container hero-content">
-    <span class="eyebrow">موسسه آموزشی در کرج</span>
+    <span class="eyebrow-tag">موسسه آموزشی در کرج</span>
     <h1>{{ site.data.site.hero_title }}</h1>
     <p>{{ site.data.site.hero_text }}</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="{{ '/courses/' | relative_url }}">{{ site.data.site.cta_primary }}</a>
-      <a class="btn btn-ghost" href="{{ '/about/' | relative_url }}">{{ site.data.site.cta_secondary }}</a>
+      <a class="link-cta" href="{{ '/courses/' | relative_url }}">{{ site.data.site.cta_primary }}</a>
+      <a class="link-cta" href="{{ '/about/' | relative_url }}">{{ site.data.site.cta_secondary }}</a>
     </div>
     <div class="hero-card">
       <div>
