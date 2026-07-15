@@ -376,10 +376,20 @@ video {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 56, 92, 0.06), var(--color-canvas) 70%),
-    url("/assets/img/logo.png") center/cover no-repeat;
+    linear-gradient(180deg, rgba(255, 56, 92, 0.06), var(--color-canvas) 70%);
   opacity: 0.22;
   z-index: 0;
+}
+.hero-media::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background: url("/assets/img/logo.png") center/contain no-repeat;
+  opacity: 0.4;
 }
 .hero-content {
   position: relative;
